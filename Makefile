@@ -18,7 +18,7 @@ WINDOW_SIZE ?= 1024
 IDAT_BUFFER_SIZE ?= 2048
 
 
-all: clean-sw run
+all: clean run
 
 $(TRGT): $(CSRCS) $(CHDRS)
 	$(CC) $(CFLAGS) $(DEFINE) $(CSRCS) -o $@ -lm -lgcc -lc
